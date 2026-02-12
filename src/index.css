@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "ProximaNova, sans-serif";
+  src: url("/fonts/ProximaNova-Regular.otf");
+}
+
+@theme {
+    --color-dark-brown: #523122;
+    --color-milk: #FAEADE;
+    --color-middle-brown: #A26833;
+    --color-light-brown: #E3A458;
+    --color-BG-color : #FDEBD2;
+    --color-stork-pink : #E8DDCA;
+    --color-stork-blue: #222123;
+    --color-content : #865720;
+    --color-border : #865720;
+    --font-Antonio: "Antonio", sans-serif;
+    --font-paragraph: "ProximaNova, sans-serif";
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .flavor-section {
+    height: screen;
+    background-color: var(--color-milk);
+  }
+}
+
+ 
