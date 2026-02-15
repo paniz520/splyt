@@ -40,7 +40,7 @@ const Flavor = () => {
 
   }, [isTablet]);
   return (
-    <section className="flavor-section  ">
+    <section className="flavor-section  max-md:pb-5">
       <div className="scroll  flex lg:flex-row flex-col items-center relative ">
         <div ref={sliderRef} className="lg:w-[52%] flex-none h-80 lg:h-full md:mt-10  xl:mt-0">
           <FlavorTitle />

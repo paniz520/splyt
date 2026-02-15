@@ -32,9 +32,9 @@ const VideoClip = () => {
   return (
     <section
     id='main'
-     className='relative md:h-[110vh] overflow-hidden md:-translate-y-[20%]! mt-0 '>
+     className='relative md:h-[110vh] h-screen overflow-hidden md:-translate-y-[20%]! mt-0 '>
         <div
-        className='video-box'
+        className='video-box video-box w-full h-full'
         style={{
         clipPath: isMobile
         ? "circle(100% at 50% 50%)"
@@ -42,7 +42,7 @@ const VideoClip = () => {
         }}
         >
         <video 
-        className=''
+        className='w-full h-full object-cover min-h-full md:min-h-0'
         preload='auto'
         src={video}
         playsInline

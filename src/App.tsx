@@ -20,7 +20,7 @@ const App = () => {
   });
 
   return (
-    <div className="  overflow-x-hidden">
+    <div className="bg-stork-blue  overflow-x-hidden">
        <div id="smooth-wrapper">
        <div id="smooth-content"> 
       <Hero />

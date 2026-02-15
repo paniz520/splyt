@@ -15,12 +15,17 @@ const handlemouseleave = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => 
   gsap.to(magnet, { x: 0, y: 0, duration: 0.3 });
 }
   return (
-      <nav className="fixed top-0 left-0 z-50 md:p-4 md:px-8 p-3 flex w-full  items-center justify-between">
+      <nav className="fixed top-0 left-0 z-50 md:p-4 md:px-8 p-4 flex w-full  items-center justify-between">
       <img onMouseMove={handleMove} onMouseLeave={handlemouseleave} src="/images/nav-logo.svg" alt="nav-logo" className="md:w-20 w-20" />
-      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+      <span
+      className="max-md:hidden"
+      >
+      <svg 
+       xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
         </svg>
-        <button className="text-dark-brown bg-[#fef3f0] rounded-[30vw] h-[3.1vw] font-Antonio font-bold px-4 tracking-wide hover:bg-light-brown duration-300 transition-colors text-sm">FIND IN STORES</button>
+        </span>
+        <button className="text-dark-brown bg-[#fef3f0] rounded-[30vw] md:h-[3.1vw] h-8 font-Antonio font-bold px-4 tracking-wide hover:bg-light-brown duration-300 transition-colors text-sm">FIND IN STORES</button>
       </nav>
   )
 }

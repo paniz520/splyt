@@ -71,7 +71,7 @@ const FlavorSlider = () => {
         {flavorlists.map((flavor, index) => {
           return (
             <div
-              className={`relative z-30 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}
+              className={`relative z-30 lg:w-[50vw] w-[84%] lg:h-[70vh] md:w-[90vw] md:h-[50vh] flex-none ${flavor.rotation}`}
               key={flavor.name}
               ref={(el) => {
                 imageRefs.current[index] = el;
@@ -88,7 +88,7 @@ const FlavorSlider = () => {
               <img
                 src={`images/${flavor.color}-drink.webp`}
                 alt={`${flavor.name} drink`}
-                className="drink-img absolute -bottom-1 right-0 left-0 rotate-0 z-40 object-contain w-full h-full"
+                className="drink-img absolute md:-bottom-1 bottom-0 right-0 left-0 rotate-0 z-40 object-contain w-full h-full"
               />
 
               <img
